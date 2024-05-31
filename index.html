@@ -6,6 +6,7 @@
     <title>Starbucks Coffee Company</title>
     <link rel="icon" href="images/starbucks-coffe-logo-hd-image-15.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
 </head>
     <body>
 
@@ -33,7 +34,7 @@
         </div>
 
         <div class="p-5 shadow-md">
-            <div class="flex mb-7 flex-row justify-center items-center bg-[#f7cdd0]">
+            <div class="flex flex-col mb-7 lg:flex-row justify-center items-center bg-[#f7cdd0]">
                 <div class="w-full h-full">
                     <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-92090.jpg" alt="">
                 </div>  
@@ -46,7 +47,7 @@
                 </div>
             </div>
 
-            <div class="flex mb-7 flex-row justify-center items-center bg-[#c300bd]">
+            <div class="flex flex-col mb-7 lg:flex-row justify-center items-center bg-[#c300bd]">
                 <div class="text-white p-20 flex flex-col text-center justify-center items-center w-full">
                     <h1 class="font-bold mb-10 text-5xl">Starbucks® Summer Game</h1>
                     <p class="text-3xl mb-10">
@@ -59,7 +60,7 @@
                 </div>
             </div>
 
-            <div class="flex mb-7 flex-row justify-center items-center bg-[#0021db]">
+            <div class="flex flex-col mb-7 lg:flex-row justify-center items-center bg-[#0021db]">
                 <div class="w-full h-full">
                     <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-92096.jpg" alt="">
                 </div>  
@@ -73,7 +74,7 @@
             </div>
 
             
-            <div class="flex mb-7 flex-row justify-center items-center bg-[#0021db]">
+            <div class="flex flex-col mb-7 lg:flex-row justify-center items-center bg-[#0021db]">
                 <div class="text-white p-20 flex flex-col text-center justify-center items-center w-full">
                     <h1 class="font-bold mb-10 text-2xl">The best deals are in the app</h1>
                     <p class="text-xl mb-10">
@@ -87,7 +88,7 @@
             </div>
 
             
-            <div class="flex mb-7 flex-row justify-center items-center bg-[#016343]">
+            <div class="flex flex-col mb-7 lg:flex-row justify-center items-center bg-[#016343]">
                 <div class="w-full h-full">
                     <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-92101.jpg" alt="">
                 </div>  
@@ -100,7 +101,7 @@
                 </div>
             </div>
 
-            <div class="flex mb-7 flex-row justify-center items-center bg-[#1e3932]">
+            <div class="flex flex-col mb-7 lg:flex-row justify-center items-center bg-[#1e3932]">
                 <div class="text-white p-20 flex flex-col text-center justify-center items-center w-full">
                     <h1 class="font-bold mb-10 text-2xl">Support World Central Kitchen</h1>
                     <p class="text-xl mb-10">
@@ -113,7 +114,7 @@
                 </div>
             </div>
 
-            <div class="flex mb-7 flex-row justify-center items-center bg-[#97d8b1]">
+            <div class="flex mb-7 flex-col lg:flex-row justify-center items-center bg-[#97d8b1]">
                 <div class="w-full h-full">
                     <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-92108.jpg" alt="">
                 </div>  
@@ -153,10 +154,15 @@
         </div>
 
         <div class="px-10 py-5">
-            <div class="flex space-x-20 py-5 flex-row text-lg border-b-2">
+            <div class="flex flex-col space-y-10 lg:space-y-0 lg:space-x-20 py-5 lg:flex-row text-lg border-b-2">
                 <div>
-                    <h1 class="font-medium pb-10">About Us</h1>
-                    <div class="space-y-7 text-gray-500 text-base">
+                    <div id="downarrow1" class="flex hover:cursor-pointer flex-row">
+                        <h1 class="font-medium pb-5">About Us</h1>
+                        <img  class="lg:hidden h-7 my-auto ml-auto  w-7" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAMdJREFUSEvtlI0JgzAQhZ+TVDfpKO0m7STtJu0mdZTmgQciej8GtdALCELO+/K+mDQ4aDQHcZHg3cyn6lS9mYGf/7laAL0z/hnA26r1JGajF4B7aXYzGj7KAi8ArgCeWq0H/ClNmJhDgwuUdbTT1YIJZWINPoUysarbk5gL1+BhKBt6wUvw07CnotdMKvoj4Dm49OGeuqHRxAKZag9D14LHyfkeSrpW9fiEMDkf87KYO1bRPbYuJPd8gt2qagtTda1B9/f/p/oL1IkhH6ERyFgAAAAASUVORK5CYII="/>
+                        <img id="uparrow1" class="lg:hidden h-7 my-auto ml-auto w-7" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAALpJREFUSEvt1MENgzAMheHHJu0mdJROQjeho3STtpsgS7GELGqerai5OBcOBD7lJ2TCoDENclHw38pX6krtFbi0m59MpuzmEvQNQNBbu4b8DKyoQik8Cls0jUdgiz4BfAEsu29NZ2fhI/TewEcGZ2AP1dRhnIFl9+qvI3l1pXYXW/zqbXMGngGsAF4Oalcu31rm/xwMLA8L7r5oJ0id00OFhUOHAzO5YKZSlzmVuktG5iWVmqnUZc6w1Bt46SMf2ybTjwAAAABJRU5ErkJggg=="/>
+                        
+                    </div>
+                    <div id="about-us" class="space-y-7 hidden lg:block text-gray-500 text-base">
                         <p class="hover:cursor-pointer hover:text-black">Our Company</p>
                         <p class="hover:cursor-pointer hover:text-black">Our Coffee</p>
                         <p class="hover:cursor-pointer hover:text-black">Stories and News</p>
@@ -167,8 +173,12 @@
                     </div>
                 </div>
                 <div>
-                    <h1 class="font-medium pb-10">Careers</h1>
-                    <div class="space-y-7 text-gray-500 text-base">
+                    <div id="downarrow2" class="flex hover:cursor-pointer flex-row">
+                        <h1 class="font-medium pb-5">Careers</h1>
+                        <img  class="lg:hidden h-7 my-auto ml-auto  w-7" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAMdJREFUSEvtlI0JgzAQhZ+TVDfpKO0m7STtJu0mdZTmgQciej8GtdALCELO+/K+mDQ4aDQHcZHg3cyn6lS9mYGf/7laAL0z/hnA26r1JGajF4B7aXYzGj7KAi8ArgCeWq0H/ClNmJhDgwuUdbTT1YIJZWINPoUysarbk5gL1+BhKBt6wUvw07CnotdMKvoj4Dm49OGeuqHRxAKZag9D14LHyfkeSrpW9fiEMDkf87KYO1bRPbYuJPd8gt2qagtTda1B9/f/p/oL1IkhH6ERyFgAAAAASUVORK5CYII="/>
+                    </div>
+                    
+                    <div id="careers" class="space-y-7 text-gray-500 hidden lg:block text-base">
                         <p class="hover:cursor-pointer hover:text-black">Culture and Values</p>
                         <p class="hover:cursor-pointer hover:text-black">Inclusion, Diversity, and Equity</p>
                         <p class="hover:cursor-pointer hover:text-black">College Achievement Plan</p>
@@ -178,16 +188,24 @@
                     </div>
                 </div>  
                 <div>
-                    <h1 class="font-medium pb-10">Social Impact</h1>
-                    <div class="space-y-7 text-gray-500 text-base">
+                    <div id="downarrow3" class="flex hover:cursor-pointer flex-row">
+                        <h1 class="font-medium pb-5">Social Impact</h1>
+                        <img  class="lg:hidden h-7 my-auto ml-auto  w-7" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAMdJREFUSEvtlI0JgzAQhZ+TVDfpKO0m7STtJu0mdZTmgQciej8GtdALCELO+/K+mDQ4aDQHcZHg3cyn6lS9mYGf/7laAL0z/hnA26r1JGajF4B7aXYzGj7KAi8ArgCeWq0H/ClNmJhDgwuUdbTT1YIJZWINPoUysarbk5gL1+BhKBt6wUvw07CnotdMKvoj4Dm49OGeuqHRxAKZag9D14LHyfkeSrpW9fiEMDkf87KYO1bRPbYuJPd8gt2qagtTda1B9/f/p/oL1IkhH6ERyFgAAAAASUVORK5CYII="/>
+                    </div>
+                    
+                    <div id="social-impact" class="space-y-7 hidden lg:block text-gray-500 text-base">
                         <p class="hover:cursor-pointer hover:text-black">People</p>
                         <p class="hover:cursor-pointer hover:text-black">Planet</p>
                         <p class="hover:cursor-pointer hover:text-black">Environmental and Social<br> Impact Reporting</p>
                     </div>
                 </div>
                 <div>
-                    <h1 class="font-medium pb-10">For Business Partners</h1>
-                    <div class="space-y-7 text-gray-500 text-base">
+                    <div id="downarrow4" class="flex hover:cursor-pointer flex-row">
+                        <h1 class="font-medium pb-5">For Business Partners</h1>
+                        <img  class="lg:hidden h-7 my-auto ml-auto  w-7" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAMdJREFUSEvtlI0JgzAQhZ+TVDfpKO0m7STtJu0mdZTmgQciej8GtdALCELO+/K+mDQ4aDQHcZHg3cyn6lS9mYGf/7laAL0z/hnA26r1JGajF4B7aXYzGj7KAi8ArgCeWq0H/ClNmJhDgwuUdbTT1YIJZWINPoUysarbk5gL1+BhKBt6wUvw07CnotdMKvoj4Dm49OGeuqHRxAKZag9D14LHyfkeSrpW9fiEMDkf87KYO1bRPbYuJPd8gt2qagtTda1B9/f/p/oL1IkhH6ERyFgAAAAASUVORK5CYII="/>
+                    </div>
+                    
+                    <div id="partners" class="space-y-7 text-gray-500 hidden lg:block text-base">
                         <p class="hover:cursor-pointer hover:text-black">Landlord Support Center</p>
                         <p class="hover:cursor-pointer hover:text-black">Suppliers</p>
                         <p class="hover:cursor-pointer hover:text-black">Corporate Gift Card Sales</p>
@@ -195,8 +213,12 @@
                     </div>
                 </div>
                 <div>
-                    <h1 class="font-medium pb-10">Order and Pick Up</h1>
-                    <div class="space-y-7 text-gray-500 text-base">
+                    <div id="downarrow5" class="flex flex-row hover:cursor-pointer">
+                        <h1 class="font-medium pb-5">Order and Pick Up</h1>
+                        <img  class="lg:hidden h-7 my-auto ml-auto  w-7" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAMdJREFUSEvtlI0JgzAQhZ+TVDfpKO0m7STtJu0mdZTmgQciej8GtdALCELO+/K+mDQ4aDQHcZHg3cyn6lS9mYGf/7laAL0z/hnA26r1JGajF4B7aXYzGj7KAi8ArgCeWq0H/ClNmJhDgwuUdbTT1YIJZWINPoUysarbk5gL1+BhKBt6wUvw07CnotdMKvoj4Dm49OGeuqHRxAKZag9D14LHyfkeSrpW9fiEMDkf87KYO1bRPbYuJPd8gt2qagtTda1B9/f/p/oL1IkhH6ERyFgAAAAASUVORK5CYII="/>
+                    </div>
+                    
+                    <div id="order" class="space-y-7 hidden lg:block text-gray-500 text-base">
                         <p class="hover:cursor-pointer hover:text-black">Order on the App</p>
                         <p class="hover:cursor-pointer hover:text-black">Order on the Web</p>
                         <p class="hover:cursor-pointer hover:text-black">Delivery</p>
