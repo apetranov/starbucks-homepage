@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
             upArrow1.classList.add("hidden");
             aboutUsDetails.classList.add("hidden");
         }
-    })
+    });
 
     var careersDiv = document.getElementById("careersdiv");
     var downArrow2 = document.getElementById("downarrow2");
@@ -31,9 +31,60 @@ document.addEventListener("DOMContentLoaded", function() {
             upArrow2.classList.add("hidden");
             careersDetails.classList.add("hidden");
         }
-    })
+    });
 
-    
+    var socialImpactDiv = document.getElementById("socialimpactdiv");
+    var downArrow3 = document.getElementById("downarrow3");
+    var upArrow3 = document.getElementById("uparrow3");
+    var socialDetails = document.getElementById("social-impact");
+
+    socialImpactDiv.addEventListener("click", function() {
+        if(upArrow3.classList.contains("hidden")) {
+            upArrow3.classList.remove("hidden");
+            downArrow3.classList.add("hidden");
+            socialDetails.classList.remove('hidden');
+        } else {
+            upArrow3.classList.add('hidden');
+            downArrow3.classList.remove('hidden');
+            socialDetails.classList.add('hidden');
+        }
+    });
+
+    var businessPartnersDiv = document.getElementById("businesspartnersdiv");
+    var downArrow4 = document.getElementById("downarrow4");
+    var upArrow4 = document.getElementById("uparrow4");
+    var partnersDetails = document.getElementById("partners");
+
+    businessPartnersDiv.addEventListener("click", function() {
+        if (upArrow4.classList.contains("hidden")) {
+            upArrow4.classList.remove("hidden");
+            downArrow4.classList.add("hidden");
+            partnersDetails.classList.remove('hidden');
+        } else {
+            upArrow4.classList.add('hidden');
+            downArrow4.classList.remove('hidden');
+            partnersDetails.classList.add('hidden');
+        }
+
+    });
+
+
+    var orderDiv = document.getElementById("orderdiv");
+    var upArrow5 = document.getElementById("uparrow5");
+    var downArrow5 = document.getElementById("downarrow5");
+    var orderDetails = document.getElementById("order");
+
+    orderDiv.addEventListener("click", function() {
+        if (upArrow5.classList.contains('hidden')) {
+            upArrow5.classList.remove('hidden');
+            downArrow5.classList.add('hidden');
+            orderDetails.classList.remove('hidden');
+        } else {
+            upArrow5.classList.add('hidden');
+            downArrow5.classList.remove('hidden');
+            orderDetails.classList.add('hidden');
+        }
+    });
 
 
 });
