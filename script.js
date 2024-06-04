@@ -86,5 +86,32 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
+    var menu = document.getElementById("menu");
+    var close = document.getElementById("close");
+
+    menu.addEventListener("click", function() {
+        if (!menu.classList.contains("hidden")) {
+          menu.classList.remove("rotate4");
+          menu.classList.add("rotate");
+    
+          menu.addEventListener("animationend", function() {
+            menu.classList.add("hidden");
+            close.classList.remove("hidden");
+            close.classList.add("rotate2");
+          }, { once: true });
+        } 
+      });
+    
+      close.addEventListener("click", function() {
+        close.classList.remove("rotate2");
+        close.classList.add("rotate3");
+    
+        close.addEventListener("animationend", function() {
+          close.classList.remove("rotate3");
+          close.classList.add("hidden");
+          menu.classList.remove("hidden");
+          menu.classList.add("rotate4");
+        }, { once: true });
+      });
 
 });
