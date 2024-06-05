@@ -88,12 +88,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var menu = document.getElementById("menu");
     var close = document.getElementById("close");
+    var mobileMenu = document.getElementById("mobileMenu");
+    var blackOverlay = document.getElementById("blackOverlay");
 
     menu.addEventListener("click", function() {
         if (!menu.classList.contains("hidden")) {
-          menu.classList.remove("rotate4");
-          menu.classList.add("rotate");
-    
+            menu.classList.remove("rotate4");
+            menu.classList.add("rotate");
+            mobileMenu.classList.add("right-[0%]");
+            blackOverlay.classList.remove("hidden");
           menu.addEventListener("animationend", function() {
             menu.classList.add("hidden");
             close.classList.remove("hidden");
@@ -105,7 +108,8 @@ document.addEventListener("DOMContentLoaded", function() {
       close.addEventListener("click", function() {
         close.classList.remove("rotate2");
         close.classList.add("rotate3");
-    
+        mobileMenu.classList.remove("right-[0%]");
+        blackOverlay.classList.add("hidden");
         close.addEventListener("animationend", function() {
           close.classList.remove("rotate3");
           close.classList.add("hidden");
