@@ -1,1 +1,1 @@
-#Live link: https://apetranov.github.io/starbucks-homepage/
+# Live link: https://apetranov.github.io/starbucks-homepage/
